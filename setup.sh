@@ -90,7 +90,6 @@ brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="/Applications" visual-studio-code
 
 # Misc casks
-brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" caffeine
