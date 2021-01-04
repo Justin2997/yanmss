@@ -121,8 +121,6 @@ brew install --cask --appdir="/Applications" docker
 brew install --cask --appdir="/Applications" docker-toolbox
 
 brew install --cask gpg-suite
-brew install terraform@0.12
-
 brew install thefuck
 
 # Misc casks
@@ -141,6 +139,13 @@ brew install --cask --appdir="/Applications" snagit
 # Setup Code repo
 mkdir ~/Documents/WORK
 mkdir ~/Documents/WORK/CODE
+
+# Work specific
+brew install terraform@0.12
+brew install prometheus
+brew install helm@3
+brew install helm@2
+helm plugin install https://github.com/helm/helm-2to3.git
 
 
 # Remove outdated versions from the cellar.

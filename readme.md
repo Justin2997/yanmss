@@ -106,7 +106,7 @@ Host *
 And run : 
 ```
 ssh-add -K ~/.ssh/id_ed25519
-
+ls
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 Add the SSH key to your GitHub account.
@@ -116,3 +116,12 @@ If you like nano more than vim :
 ```
 git config --global core.editor "nano"
 ```
+
+#### Install Kubernetes
+Please start Docker on Mac and install it with the interface.
+
+#### Install HelmFile
+Please install the corret version of `helmfile` at https://github.com/roboll/helmfile
+
+#### Install istioctl
+Please manualy add istioctl binary to your shell file : https://github.com/istio/istio/tree/1.5.0
