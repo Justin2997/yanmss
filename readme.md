@@ -111,3 +111,8 @@ pbcopy < ~/.ssh/id_ed25519.pub
 ```
 Add the SSH key to your GitHub account.
 
+#### Change git editor
+If you like nano more than vim : 
+```
+git config --global core.editor "nano"
+```
