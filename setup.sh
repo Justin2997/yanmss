@@ -48,7 +48,7 @@ brew upgrade
 
 # Install iTerm2
 echo "Installing iTerm2..."
-brew cask install iterm2
+brew install --cask iterm2
 
 # Update the Terminal
 # Install oh-my-zsh
@@ -77,6 +77,32 @@ else
     echo "Ruby already installed!"
 fi
 
+# Install phyton
+if test ! $(which pyenv); then
+    echo "Installing Phyton..."
+    brew install pyenv
+    pyenv install 3.7.3
+    pyenv global 3.7.3
+else
+    echo "Phyton already installed!"
+fi
+
+# Install go
+if test ! $(which phyton); then
+    echo "Installing Go..."
+    brew install go
+else
+    echo "Go already installed!"
+fi
+
+# Install node
+if test ! $(which node); then
+    echo "Installing Node..."
+    brew install node
+else
+    echo "Node already installed!"
+fi
+
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install nmap
 
@@ -84,15 +110,38 @@ brew install nmap
 brew install speedtest_cli
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
+brew install azure-cli
+brew install --cask --appdir="/Applications" alfred
+brew install --cask --appdir="/Applications" 1clipboard
 
 # Development tool casks
-brew cask install --appdir="/Applications" visual-studio-code
+brew install --cask --appdir="/Applications" visual-studio-code
+brew install --cask --appdir="/Applications" postman
+brew install --cask --appdir="/Applications" docker
+brew install --cask --appdir="/Applications" docker-toolbox
+
+brew install --cask gpg-suite
+brew install terraform@0.12
+
+brew install thefuck
 
 # Misc casks
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" caffeine
+brew install --cask --appdir="/Applications" slack
+brew install --cask --appdir="/Applications" zoom
+brew install --cask --appdir="/Applications" 1password
+brew install --cask 1password-cli
+brew install --cask --appdir="/Applications" caffeine
+brew install --cask --appdir="/Applications" spotify
+#brew install --cask --appdir="/Applications" microsoft-office
+#brew install --cask --appdir="/Applications" microsoft-teams
+brew install --cask --appdir="/Applications" telegram
+brew install --cask --appdir="/Applications" the-unarchiver
+brew install --cask --appdir="/Applications" snagit
+
+# Setup Code repo
+mkdir ~/Documents/WORK
+mkdir ~/Documents/WORK/CODE
+
 
 # Remove outdated versions from the cellar.
 echo "Running brew cleanup..."
