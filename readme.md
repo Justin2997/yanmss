@@ -76,16 +76,22 @@ Follow this link : https://support.apple.com/en-ca/HT204837
 #### Enable GPG key
 Follow this link to install it : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-gpg-key
 
-You can also run : 
+You can also run :
 ```
 gpg --quick-generate-key github@email.com
 ```
 Follow the other stapes on Github website to add it there
 
+When finish run :
+```
+git config --global user.signingkey ED5CDE14
+git config --global commit.gpgsign true
+```
+
 #### Adding SSH key to Github
 Follow this link to install it : https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
-You can also run : 
+You can also run :
 ```
 ssh-keygen -t ed25519 -C "github@email.com"
 
@@ -103,7 +109,7 @@ Host *
   IdentityFile ~/.ssh/id_ed25519
 ```
 
-And run : 
+And run :
 ```
 ssh-add -K ~/.ssh/id_ed25519
 ls
@@ -112,7 +118,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 Add the SSH key to your GitHub account.
 
 #### Change git editor
-If you like nano more than vim : 
+If you like nano more than vim :
 ```
 git config --global core.editor "nano"
 ```
