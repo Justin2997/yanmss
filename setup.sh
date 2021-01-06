@@ -78,14 +78,11 @@ else
 fi
 
 # Install phyton
-if test ! $(which pyenv); then
-    echo "Installing Phyton..."
-    brew install pyenv
-    pyenv install 3.7.3
-    pyenv global 3.7.3
-else
-    echo "Phyton already installed!"
-fi
+brew install pyenv
+pyenv install 3.7.3
+pyenv global 3.7.3
+
+brew install poetry
 
 # Install go
 if test ! $(which phyton); then
@@ -135,6 +132,7 @@ brew install --cask --appdir="/Applications" spotify
 brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" the-unarchiver
 brew install --cask --appdir="/Applications" snagit
+brew install --cask --appdir="/Applications" macdown
 
 # Setup Code repo
 mkdir ~/Documents/WORK
