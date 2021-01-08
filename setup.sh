@@ -116,6 +116,7 @@ brew install --cask --appdir="/Applications" visual-studio-code
 brew install --cask --appdir="/Applications" postman
 brew install --cask --appdir="/Applications" docker
 brew install --cask --appdir="/Applications" docker-toolbox
+brew install --cask lens
 
 brew install --cask gpg-suite
 brew install thefuck
@@ -144,7 +145,7 @@ brew install prometheus
 brew install helm@3
 brew install helm@2
 helm plugin install https://github.com/helm/helm-2to3.git
-
+brew install kubectx
 
 # Remove outdated versions from the cellar.
 echo "Running brew cleanup..."
