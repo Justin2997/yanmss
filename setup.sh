@@ -100,6 +100,10 @@ else
     echo "Node already installed!"
 fi
 
+# Install blockchain ETH tools
+npm install truffle -g
+
+
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install nmap
 
