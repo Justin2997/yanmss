@@ -124,6 +124,8 @@ brew install --cask lens
 
 brew install --cask gpg-suite
 brew install thefuck
+brew install firebase-cli
+brew install nvm
 
 # Misc casks
 brew install --cask --appdir="/Applications" slack
