@@ -126,6 +126,7 @@ brew install --cask gpg-suite
 brew install thefuck
 brew install firebase-cli
 brew install nvm
+brew install fzf
 
 # Misc casks
 brew install --cask --appdir="/Applications" slack
@@ -135,11 +136,9 @@ brew install --cask 1password-cli
 brew install --cask --appdir="/Applications" caffeine
 brew install --cask --appdir="/Applications" spotify
 #brew install --cask --appdir="/Applications" microsoft-office
-#brew install --cask --appdir="/Applications" microsoft-teams
+brew install --cask --appdir="/Applications" microsoft-teams
 brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" the-unarchiver
-brew install --cask --appdir="/Applications" snagit
-brew install --cask --appdir="/Applications" macdown
 
 # Setup Code repo
 mkdir ~/Documents/WORK
