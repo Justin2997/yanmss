@@ -137,8 +137,9 @@ brew install --cask --appdir="/Applications" caffeine
 brew install --cask --appdir="/Applications" spotify
 #brew install --cask --appdir="/Applications" microsoft-office
 brew install --cask --appdir="/Applications" microsoft-teams
-brew install --cask --appdir="/Applications" telegram
+#brew install --cask --appdir="/Applications" telegram
 brew install --cask --appdir="/Applications" the-unarchiver
+brew install --cask --appdir="/Applications" notion
 
 # Setup Code repo
 mkdir ~/Documents/WORK
